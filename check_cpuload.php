@@ -1,3 +1,4 @@
+<?php
 # template file pnp4nagios
 # copyright Marcus Wilhelmsson
 # license: MIT
@@ -8,18 +9,17 @@
 $opt[1] = '';
 $def[1] = '';
 
-
 # Set image format, title, etc.
 $opt[1] .= " --imgformat=PNG --title=\" $hostname / " . $this->MACRO['DISP_SERVICEDESC'] . "\" --base=1024 --vertical-label=\"$vertlabel\" --slope-mode ";
 $opt[1] .= "--watermark=\"http://www.nickebo.net\" ";
 
-function generateRandomColor(){
+function generateRandomColor() {
     $randomcolor = '#' . strtoupper(dechex(rand(0,10000000)));
     if (strlen($randomcolor) != 7){
         $randomcolor = str_pad($randomcolor, 10, '0', STR_PAD_RIGHT);
         $randomcolor = substr($randomcolor,0,7);
     }
-return $randomcolor;
+    return $randomcolor;
 }
 
 for ($i = 0; $i <= sizeof($DS)-1; $i++) {
