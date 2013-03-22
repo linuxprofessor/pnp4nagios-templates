@@ -1,3 +1,9 @@
+# template file pnp4nagios
+# copyright Marcus Wilhelmsson
+# license: MIT
+
+# to be used with my check_cpuload.sh for SmartOS for generating graphs with pnp4nagios
+
 # Define opt and def as empty
 $opt[1] = '';
 $def[1] = '';
