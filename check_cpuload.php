@@ -1,3 +1,4 @@
+<?php
 # template file pnp4nagios
 # copyright Marcus Wilhelmsson
 # license: MIT
