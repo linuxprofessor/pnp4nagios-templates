@@ -1,10 +1,4 @@
 # Various pnp4nagios templates created by me
 ====================
 
-
-Templates
--------
-
-### check_cpuload.php
-
-Template for check_cpuload.sh that's used to monitor multicore CPU's in SmartOS
+The templates are made to be used with pnp4nagios. They're usually related to a Nagios script.
