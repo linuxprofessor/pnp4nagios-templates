@@ -15,7 +15,7 @@ $opt[1] .= " --imgformat=PNG --title=\" $hostname / " . $this->MACRO['DISP_SERVI
 $opt[1] .= "--watermark=\"http://www.nickebo.net\" ";
 
 # Print graph
-$def[1] .= "DEF:ds1=$rrdfile:$DS[1]:AVERAGE " ;
+$def[1] .= "DEF:ds1=$rrdfile:$DS[1]:AVERAGE ";
 $def[1] .= "CDEF:var1=ds1 ";
 
 # Draw line
@@ -30,10 +30,10 @@ $def[1] .= "GPRINT:var1:MAX:\"Max\\:%8.2lf $UNIT[1]\\n\" ";
 
 # Draw warning and crit
 if (isset($WARN[1]) && $WARN[1] != "") {
-	$def[1] .= "HRULE:$WARN[1]#FFFF00:\"Warning ($NAME[1])\: " . $WARN[1] . " " . $UNIT[1] . " \\n\" " ;
+	$def[1] .= "HRULE:$WARN[1]#FFFF00:\"Warning ($NAME[1])\: " . $WARN[1] . " " . $UNIT[1] . " \\n\" ";
 }
 
 if (isset($CRIT[1]) && $CRIT[1] != "") {
-	$def[1] .= "HRULE:$CRIT[1]#FF0000:\"Critical ($NAME[1])\: " . $CRIT[1] . " " . $UNIT[1] . " \\n\" " ;
+	$def[1] .= "HRULE:$CRIT[1]#FF0000:\"Critical ($NAME[1])\: " . $CRIT[1] . " " . $UNIT[1] . " \\n\" ";
 }
 ?>
