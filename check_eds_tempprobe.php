@@ -30,10 +30,10 @@ $def[1] .= "GPRINT:var1:MAX:\"Max\\:%8.2lf $UNIT[1]\\n\" ";
 
 # Draw warning and crit
 if (isset($WARN[1]) && $WARN[1] != "") {
-	$def[1] .= "HRULE:$WARN[1]#FFFF00:\"Warning ($NAME[1])\: " . $WARN[1] . " " . $UNIT[1] . " \\n\" " ;
+	$def[1] .= "HRULE:$WARN[1]#FFFF00:\"Warning ($NAME[1])\: " . $WARN[1] . " " . $UNIT[1] . " \\n\" ";
 }
 
 if (isset($CRIT[1]) && $CRIT[1] != "") {
-	$def[1] .= "HRULE:$CRIT[1]#FF0000:\"Critical ($NAME[1])\: " . $CRIT[1] . " " . $UNIT[1] . " \\n\" " ;
+	$def[1] .= "HRULE:$CRIT[1]#FF0000:\"Critical ($NAME[1])\: " . $CRIT[1] . " " . $UNIT[1] . " \\n\" ";
 }
 ?>

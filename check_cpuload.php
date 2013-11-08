@@ -1,9 +1,9 @@
 <?php
-# template file pnp4nagios
-# copyright Marcus Wilhelmsson
-# license: MIT
+# Template file pnp4nagios
+# Copyright Marcus Wilhelmsson
+# License: MIT
 
-# to be used with my check_cpuload.sh for SmartOS for generating graphs with pnp4nagios
+# To be used with my check_cpuload.sh for SmartOS for generating graphs with pnp4nagios
 
 # Define opt and def as empty
 $opt[1] = '';
